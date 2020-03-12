@@ -27,7 +27,8 @@
     "test:lint": "eslint \"src/**\" \"test/**\"",
     "test:coverage": "jest --coverage",
     "test:package": "npm-run-all test:lint test:coverage",
-    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "release:preview": "npx semantic-release -d"
   },
   "files": [
     "dist"
